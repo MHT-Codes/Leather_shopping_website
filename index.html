@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e8">
+  <meta name="description" content="Small-batch leather goods, made slowly and personalized just for you.">
+  <title>Atelier Hide — Keep what matters close</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Complimentary monogramming on every bag this week <b>— made for you</b></div>
+  <header class="wrap header">
+    <a class="brand" href="#top" aria-label="Atelier Hide home"><span class="brand-mark">A</span><span><span class="brand-name">Atelier Hide</span><span class="brand-sub">Objects to keep</span></span></a>
+    <nav class="nav" aria-label="Main navigation"><a href="#shop">Shop all</a><a href="#personalise">Personalise</a><a href="#story">Our workshop</a><a href="#craft">The craft</a></nav>
+    <div class="head-actions">
+      <button class="icon-btn" id="searchJump" aria-label="Search products"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-btn" id="favoritesJump" aria-label="Show favorites"><svg viewBox="0 0 24 24"><path d="M20.8 8.8c0 5.3-8.8 11-8.8 11s-8.8-5.7-8.8-11a4.6 4.6 0 0 1 8.8-1.5 4.6 4.6 0 0 1 8.8 1.5Z"/></svg></button>
+      <button class="icon-btn" id="bagOpen" aria-label="Open shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="bag-count" id="bagCount">0</span></button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="wrap hero">
+      <div class="hero-text"><div class="eyebrow">Made slowly, carried forever</div><h1>Keep what<br>matters <em>close.</em></h1><p class="hero-copy">Small-batch leather goods with a life of their own. Cut, stitched and finished by hand — then marked with the initials that make it yours.</p><div class="hero-ctas"><a class="btn" href="#shop">Explore the collection <span>→</span></a><a class="text-link" href="#personalise">Make it personal</a></div><div class="hero-note"><span></span> Crafted in small runs. Never in a hurry.</div></div>
+      <div class="hero-visual"><img class="hero-photo" src="everyday-tote.jpg" alt="Handcrafted tan leather bag on a warm studio backdrop"><div class="hero-stamp">Made by hand<small>kept for years</small></div><div class="image-label">The everyday tote · chestnut</div></div>
+    </section>
+    <div class="wrap trust-row"><div><b>✳</b> Full-grain leather</div><div><b>⌁</b> Made by hand</div><div><b>✦</b> Personalised for you</div><div><b>↺</b> Built to age beautifully</div></div>
+
+    <section class="wrap section" id="shop">
+      <div class="section-head"><div><div class="eyebrow">The collection</div><h2>Good things, made to go.</h2></div><p>Useful companions, cut from honest leather and finished with the details that matter.</p></div>
+      <div class="filters" id="filters" aria-label="Filter products"></div>
+      <div class="catalog-tools"><div class="catalog-meta" id="catalogMeta">Showing all pieces</div><label class="searchbox"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input type="search" id="searchInput" placeholder="Find your next favourite…" aria-label="Search the collection"></label><select id="sortSelect" class="sort-select" aria-label="Sort products"><option value="featured">Sort: Featured</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option></select></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="wrap section" id="personalise">
+      <div class="custom-panel">
+        <div class="custom-image"><img src="little-crossbody.jpg" alt="A structured leather bag, ready for a personal monogram"></div>
+        <div class="custom-copy"><div class="eyebrow">A small mark, a big feeling</div><h2>Your initials.<br>Your everyday.</h2><p>Choose the piece, pick a thread and add up to three letters. Our makers press your monogram by hand, just for you.</p><div class="monogram-demo"><div class="leather-chip" id="demoChip">MH</div><div><div class="demo-label">A little preview</div><div class="demo-letter" id="demoLetters">M H</div></div></div><div class="monogram-actions"><input id="demoInput" aria-label="Enter initials for preview" maxlength="3" value="MH"><a class="btn" href="#shop">Choose your piece <span>→</span></a></div></div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="story">
+      <div class="story"><div class="story-visual"><img src="workshop.jpg" alt="A maker's hands working at a leather crafting bench"></div><div class="story-copy"><div class="eyebrow">A little more human</div><h2>Made at a table,<br>not a factory line.</h2><p>Atelier Hide began with a simple idea: the things we reach for every day should feel good in the hand, get better with use, and be made with care. We work in small batches, leave room for the leather's own character, and take the long way around when it makes a better object.</p><div class="story-points"><div class="story-point"><b>Honest materials</b><small>Natural grain, visible character</small></div><div class="story-point"><b>Thoughtful details</b><small>Solid brass, careful finishing</small></div><div class="story-point"><b>Made to be used</b><small>Repairable, ready for real life</small></div><div class="story-point"><b>Personal by design</b><small>Monograms pressed by hand</small></div></div><a class="text-link" href="#craft">How we make it →</a></div></div>
+    </section>
+
+    <section class="quote-band"><blockquote>“The best things we own aren't perfect. They're the ones that have been with us the longest.”</blockquote><span>A note from the workshop</span></section>
+
+    <section class="wrap section" id="craft"><div class="section-head"><div><div class="eyebrow">The good kind of slow</div><h2>From hide to heirloom.</h2></div><p>A little patience at every step makes a piece that feels right from the first carry.</p></div><div class="process-grid"><article class="process-card"><div class="process-no">01 / Select</div><h3>We choose the character.</h3><p>Each hide is checked by hand for its grain, strength and natural marks. No two pieces begin quite the same.</p></article><article class="process-card"><div class="process-no">02 / Shape</div><h3>Cut, edge, stitch.</h3><p>Patterns are cut in small runs. Edges are burnished smooth, seams are stitched, and hardware is set one piece at a time.</p></article><article class="process-card"><div class="process-no">03 / Make it yours</div><h3>A final personal touch.</h3><p>Choose initials or leave it plain. Either way, every piece is checked, wrapped and ready for the years ahead.</p></article></div></section>
+
+    <section class="wrap section" class="wrap section section-tight"><div class="newsletter"><div><div class="eyebrow">Letters from the workshop</div><h2>A little craft in your inbox.</h2><p>New pieces, care notes and occasional studio stories. No noise.</p></div><form id="newsletterForm"><input id="emailInput" type="email" placeholder="Your email address" required aria-label="Email address"><button class="btn" type="submit">Sign me up <span>→</span></button></form></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><div class="footer-top"><div><div class="footer-brand">Atelier Hide</div><p>Handmade leather things for everyday life. Thoughtful, personal, and made to be kept.</p></div><div><h4>Explore</h4><a href="#shop">Shop all</a><a href="#personalise">Personalise</a><a href="#story">Our workshop</a></div><div><h4>Care & help</h4><a href="#craft">Leather care</a><a href="#craft">Shipping & returns</a><a href="#craft">Contact the studio</a></div><div><h4>A note on leather</h4><p>Natural leather will soften, darken and collect marks as you use it. We think that's where the good part begins.</p></div></div><div class="footer-bottom"><span>© 2026 Atelier Hide · Small batch, made with care.</span><span>Designed for a life well carried.</span></div></div></footer>
+  <nav class="mobile-nav" aria-label="Quick links"><a href="#shop">Shop</a><a href="#personalise">Monogram</a><a href="#story">Our story</a><a href="#craft">Craft</a></nav>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping bag"><div class="drawer-head"><h2>Your bag <span id="bagTitleCount"></span></h2><button class="close" id="bagClose" aria-label="Close bag">×</button></div><div class="drawer-content" id="cartContent"></div><div class="drawer-foot" id="cartFoot"></div></aside>
+  <section class="modal" id="productModal" role="dialog" aria-modal="true" aria-label="Personalise product"><div class="modal-grid"><div class="modal-image"><img id="modalImage" src="" alt="Selected leather product"></div><div class="modal-content"><button class="close modal-close" id="modalClose" aria-label="Close">×</button><div class="eyebrow">Made yours</div><h2 id="modalName"></h2><p id="modalDescription"></p><div class="modal-price" id="modalPrice"></div><label class="option-label" for="finishSelect">Leather finish</label><select class="select" id="finishSelect"><option>Chestnut</option><option>Black coffee</option><option>Olive</option><option>Natural tan</option></select><label class="option-label" for="modalInitials">Monogram (optional · up to 3 letters)</label><input class="monogram-input" id="modalInitials" maxlength="3" placeholder="e.g. MHT"><label class="option-label" for="threadSelect">Thread colour</label><select class="select" id="threadSelect"><option>Antique gold</option><option>Cream</option><option>Deep burgundy</option></select><button class="btn wide" id="addToBag" class="modal-add">Add to bag <span>→</span></button></div></div></section>
+  <div class="toast" id="toast" role="status"></div>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
